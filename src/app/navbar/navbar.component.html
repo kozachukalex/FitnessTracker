@@ -1,9 +1,9 @@
 <div id="nav-wrapper">
   <div id="nav-content" class="container flexRow jc-space-between">
     <a routerLink="/">
-    <h2> LogoHere </h2>
+      <h2> LogoHere </h2>
     </a>
-    <ul class="flexRow">
+    <ul class="flexRow" id="desktop-menu">
       <a routerLink="/">
         <li> Home </li>
       </a>
@@ -17,5 +17,23 @@
         <li> Log In </li>
       </a>
     </ul>
+    <div id="mobile-nav-menu-icon"> icon </div>
   </div>
+
+</div>
+<div id="mobile-menu">
+  <ul>
+    <a routerLink="/">
+      <li> Home </li>
+    </a>
+    <a routerLink="/about">
+      <li> About </li>
+    </a>
+    <a routerLink="/contact">
+      <li> Contact Us</li>
+    </a>
+    <a routerLink="/login">
+      <li> Log In </li>
+    </a>
+  </ul>
 </div>
