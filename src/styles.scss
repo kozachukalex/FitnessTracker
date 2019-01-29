@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 80%;
+}
+.flexRow{
+    display: flex;
+    flex-flow: row;
+}
+.flexCol{
+    display: flex;
+    flex-flow: column;
+}
+
+.jc-space-between{
+    justify-content: space-between;
+}
+
+.jc-space-around{
+    justify-content: space-around;
+}
+
+.ai-Center{
+    align-items: center;
+}

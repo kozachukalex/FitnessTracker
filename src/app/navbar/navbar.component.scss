@@ -1,0 +1,36 @@
+#nav-wrapper{
+    background: blue;
+    height: 68px;
+    #nav-content{
+        height: 100%;
+        width: 100%;
+        color: white;
+        margin: 0 auto;
+        a{
+            text-decoration: none;
+            color: white;
+            align-self: center;
+            padding: 1.2em;
+            &:hover{
+                background: red;
+            }
+        }
+        ul{
+            width: 30%;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                color: white;
+                font-size: 1.2em;
+                align-self: center;
+                padding: 1em;
+                li{
+                list-style: none;
+                }
+                &:hover{
+                    background: red;
+                }
+            }
+        }
+    }
+}
