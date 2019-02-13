@@ -2,6 +2,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Nova Flat', cursive;
 }
 .container{
     max-width: 80%;
@@ -25,4 +26,21 @@
 
 .ai-Center{
     align-items: center;
+}
+
+.flexMediaRowToCol{
+    display: flex;
+    flex-flow: row;
+}
+
+.divider{
+    border: 1px solid grey;
+    width: 90%;
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 800px) {
+.flexMediaRowToCol{
+    flex-flow: column;
+}
 }
