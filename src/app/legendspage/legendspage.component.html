@@ -1,8 +1,34 @@
 <h2> LEGENDS </h2>
-<div id="legend-wrapper" class="flexMediaRowToCol">
-  <section id="legend-list">
-    list of legends
+<div id="legend-wrapper" class="row">
+  <section id="legend-list" class="col col-sm-12 col-md-4">
+    <ul>
+      <li *ngFor="let legend of legends">
+        <a routerLink="/legends/{{legend.name}}"> {{legend.name}} </a>
+      </li>
+    </ul>
     <!-- on legend click, scroll to image of legend component -->
   </section>
-  <app-legend-info></app-legend-info>
+  <!-- i want to add carousel of all skins -->
+
+  <img src="../../assets/bloodhound2.PNG" class="col col-sm-12 col-md-4" alt="legend-portrait">
+  <section id="legend-description" class="col col-sm-12 col-md-4">
+    <div class="flexCol">
+      <h3> Tracker </h3>
+      <h5> Passive </h5>
+      <p> Foes leave behind clues for you to find.</p>
+    </div>
+    <div class="divider"></div>
+    <div class="flexCol">
+      <h3> Eye of the Allfather</h3>
+      <h5> Tactical </h5>
+      <p> Briefly reveal enemies, traps, and clues through all structures in front of you.</p>
+    </div>
+    <div class="divider"></div>
+    <div class="flexCol">
+      <h3> Beast of the Hunter</h3>
+      <h5> Ultimate </h5>
+      <p> Transform into the ultimate hunter. Enhances your senses, allow you to see cold tracks and move faster for a
+        duration.</p>
+    </div>
+  </section>
 </div>

@@ -10,6 +10,7 @@ const routes: Routes = [
   {path: "", component: HomepageComponent},
   {path: "about", component: AboutpageComponent},
   {path: "legends", component: LegendspageComponent},
+  {path: "legends/:legend", component: LegendspageComponent},
   {path: "contact", component: ContactpageComponent},
   {path: "login", component: LoginpageComponent}
 ];
