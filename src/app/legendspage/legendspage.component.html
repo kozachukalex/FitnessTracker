@@ -2,7 +2,7 @@
 <div id="legend-wrapper" class="row">
   <section id="legend-list" class="col col-sm-12 col-md-4">
     <ul>
-      <li *ngFor="let legend of legends">
+      <li *ngFor="let legend of legendList">
         <a routerLink="/legends/{{legend.name}}"> {{legend.name}} </a>
       </li>
     </ul>
@@ -10,10 +10,14 @@
   </section>
   <!-- i want to add carousel of all skins -->
 
+  <!-- *ngIf="legendService.currentLegend.length" -->
+  <!-- *ngFor="let selected of legendService.currentLegend" -->
+  <!-- iterate through remaining html using selected legend to pull proper information -->
+  
   <img src="../../assets/bloodhound2.PNG" class="col col-sm-12 col-md-4" alt="legend-portrait">
-  <section id="legend-description" class="col col-sm-12 col-md-4">
+  <section  id="legend-description" class="col col-sm-12 col-md-4">
     <div class="flexCol">
-      <h3> Tracker </h3>
+      <h3> {{this.legendDetails.bangalore.passive}} </h3>
       <h5> Passive </h5>
       <p> Foes leave behind clues for you to find.</p>
     </div>

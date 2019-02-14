@@ -5,5 +5,12 @@ import { Injectable } from '@angular/core';
 })
 export class LegendService {
 
+  currentLegend: string = "";
+
+  toggleLegend(legend: string){
+    this.currentLegend = legend;
+    console.log(this.currentLegend);
+  }
+
   constructor() { }
 }

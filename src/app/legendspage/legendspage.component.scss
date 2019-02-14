@@ -1,14 +1,37 @@
 *{
     text-align: center;
+    margin: 0 auto;
+}
+#legend-wrapper{
+    max-width: 100vw;
 }
 h2{
-    padding-top: 100px;
+    padding-top: 90px;
     font-size: 2.5em;
+}
+h3{
+    margin: 10px auto;
+}
+
+p{
+    margin: 10px auto;
+}
+
+ul{
+    margin: 0 auto;
+    padding: 0;
+li{
+    list-style: none;
+    a{
+        text-decoration: none;
+    }
+}
 }
 
 @media screen and (max-width: 800px){
     img{
         max-height: 100vh;
+        max-width: 100vw;
         padding: 0;
     }
 }

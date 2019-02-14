@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { LegendService } from '../legend.service';
 
 @Component({
   selector: 'app-legendspage',
@@ -6,10 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./legendspage.component.scss']
 })
 export class LegendspageComponent implements OnInit {
-  // legends = ["Bangalore", "Bloodhound", "Caustic", "Gibraltor", "Lifeline", "Mirage", "Pathfinder", "Wraith"]
-
-  legends = [
-    {
+  legendList = ["Bangalore", "Bloodhound", "Caustic", "Gibraltor", "Lifeline", "Mirage", "Pathfinder", "Wraith"]
+  legendDetails = {
+    bangalore : {
       name: "Bangalore",
       passive: "Double Time",
       passiveDescription: "Taking fire while sprinting makes you move faster for a brief time.",
@@ -18,7 +18,7 @@ export class LegendspageComponent implements OnInit {
       ultimate: "Rolling Thunder",
       ultimateDescription: "Call in an artillery strike that slowly creeps across the landscape."
     },
-    {
+    bloodhound : {
       name: "Bloodhound",
       passive: "Tracker",
       passiveDescription: "See tracks left behind by your foes.",
@@ -27,7 +27,7 @@ export class LegendspageComponent implements OnInit {
       ultimate: "Beast of the Hunt",
       ultimateDescription: "Enhances your senses, allowing you move faster and highlighting your prey."
     },
-    {
+    caustic : {
       name: "Caustic",
       passive: "Nox Vision",
       passiveDescription: "Allows you to see enemies through your gas.",
@@ -36,7 +36,7 @@ export class LegendspageComponent implements OnInit {
       ultimate: "Nox Gas Grenade",
       ultimateDescription: "Blankets a large area in Nox gas."
     },
-    {
+    gibraltor : {
       name: "Gibraltor",
       passive: "Gun Shield",
       passiveDescription: "Aiming down sights deploys a gun shield that blocks incoming fire.",
@@ -45,7 +45,7 @@ export class LegendspageComponent implements OnInit {
       ultimate: "Defensive Bombardment",
       ultimateDescription: "Call in a concentrated mortar strike on a marked position."
     },
-    {
+    lifeline : {
       name: "Lifeline",
       passive: "Combat Medic",
       passiveDescription: "Revive knocked down teammates faster while protected by a shield wall. Healing items are used 25% faster.",
@@ -54,7 +54,7 @@ export class LegendspageComponent implements OnInit {
       ultimate: "Care Package",
       ultimateDescription: "Call in a drop pod full of high-quality defensive gear."
     },
-    {
+    mirage : {
       name: "Mirage",
       passive: "Encore!",
       passiveDescription: "Automatically drop a decoy and cloak for five seconds when knocked down.",
@@ -63,7 +63,7 @@ export class LegendspageComponent implements OnInit {
       ultimate: "Vanishing Act",
       ultimateDescription: "Deploy a team of Decoys to distract enemies while you cloak."
     },
-    {
+    pathfinder : {
       name: "Pathfinder",
       passive: "Insider Knowledge",
       passiveDescription: "Scan a survey beacon to reveal the ring’s next location.",
@@ -72,7 +72,7 @@ export class LegendspageComponent implements OnInit {
       ultimate: "Zipline Gun",
       ultimateDescription: "Create a zipline for everyone to use."
     },
-    {
+    wraith : {
       name: "Wraith",
       passive: "Voices from the Void",
       passiveDescription: "A voice warns you when danger approaches. As far as you can tell, it’s on your side.",
@@ -81,10 +81,12 @@ export class LegendspageComponent implements OnInit {
       ultimate: "Dimensional Rift",
       ultimateDescription: "Link two locations with portals for 60 seconds, allowing your entire team to use them."
     },
-  ]
-  constructor() { }
+  }
+  constructor(private legendService: LegendService) { }
 
   ngOnInit() {
+    console.log(this.legendDetails)
+    console.log(this.legendDetails.bangalore.passive)
 
   }
 
