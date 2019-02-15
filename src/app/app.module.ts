@@ -9,6 +9,7 @@ import { AboutpageComponent } from './aboutpage/aboutpage.component';
 import { ContactpageComponent } from './contactpage/contactpage.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
 import { LegendspageComponent } from './legendspage/legendspage.component';
+import { LegendinfopageComponent } from './legendinfopage/legendinfopage.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LegendspageComponent } from './legendspage/legendspage.component';
     AboutpageComponent,
     ContactpageComponent,
     LoginpageComponent,
-    LegendspageComponent
+    LegendspageComponent,
+    LegendinfopageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+<div *ngIf=currentLegend.length class="row" id="legend-info-page">
+  <div class="col col-sm-12 col-md-4 row">
+    <img *ngIf="currentLegend" src="../../assets/bloodhound2.PNG" class="col-md-12" alt="legend-portrait">
+  </div>
+  <section id="legend-description" class="col col-sm-12 col-md-8">
+    <div *ngIf="currentLegend" class="flexCol">
+      <h3> {{currentPassive}} </h3>
+      <h5> Passive </h5>
+      <p> {{currentPassiveDescription}}</p>
+    </div>
+    <div *ngIf="currentLegend" class="divider"></div>
+    <div *ngIf="currentLegend" class="flexCol">
+      <h3> {{currentTactical}}</h3>
+      <h5> Tactical </h5>
+      <p> {{currentTacticalDescription}} </p>
+    </div>
+    <div *ngIf="currentLegend" class="divider"></div>
+    <div *ngIf="currentLegend" class="flexCol">
+      <h3> {{currentUltimate}} </h3>
+      <h5> Ultimate </h5>
+      <p> {{currentUltimateDescription}}</p>
+    </div>
+  </section>
+</div>

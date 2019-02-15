@@ -1,9 +1,14 @@
 *{
-    text-align: center;
     margin: 0 auto;
 }
 #legend-wrapper{
     max-width: 100vw;
+}
+#legend-list{
+    ul{
+    display: flex;
+    flex-flow: row wrap;
+}
 }
 h2{
     padding-top: 90px;
@@ -24,7 +29,13 @@ li{
     list-style: none;
     a{
         text-decoration: none;
+        img{
+            height: 200px;
+        }
     }
+}
+#legend-portrait{
+    width: 100%;
 }
 }
 
@@ -33,5 +44,8 @@ li{
         max-height: 100vh;
         max-width: 100vw;
         padding: 0;
+    }
+    *{
+        text-align: center;
     }
 }

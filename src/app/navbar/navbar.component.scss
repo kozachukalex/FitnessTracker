@@ -9,11 +9,12 @@
         width: 100%;
         color: white;
         margin: 0 auto;
-        a{
+        #desktop-menu{
+            margin: 0;
+        }
+        a{  
             text-decoration: none;
             color: white;
-            align-self: center;
-            padding: 10px;
             &:hover{
                 text-decoration: underline;
             }
@@ -23,6 +24,9 @@
             justify-content: space-between;
         }
     }
+}
+#brand-logo{
+    margin: 0;
 }
 a{
     text-decoration: none;
