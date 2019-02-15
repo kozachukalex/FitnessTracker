@@ -13,10 +13,10 @@ export class LegendinfopageComponent implements OnInit {
   ngOnInit() {
   }
 
-  
   currentLegend: string = this.data.currentLegend;
   legendLocation: number = this.data.legendList.indexOf(this.currentLegend);
-
+  
+  currentPortrait: string = this.data.legendDetails[this.legendLocation].portrait;
   currentPassive: string = this.data.legendDetails[this.legendLocation].passive;
   currentPassiveDescription: string = this.data.legendDetails[this.legendLocation].passiveDescription;
   currentTactical: string = this.data.legendDetails[this.legendLocation].tactical;

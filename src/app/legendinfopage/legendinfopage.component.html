@@ -1,8 +1,8 @@
 <div *ngIf=currentLegend.length class="row" id="legend-info-page">
-  <div class="col col-sm-12 col-md-4 row">
-    <img *ngIf="currentLegend" src="../../assets/bloodhound2.PNG" class="col-md-12" alt="legend-portrait">
+  <div class="col-sm-12 col-md-2">
+    <img *ngIf="currentLegend" src={{currentPortrait}} alt="legend-portrait">
   </div>
-  <section id="legend-description" class="col col-sm-12 col-md-8">
+  <section id="legend-description" class="col-sm-12 col-md-8">
     <div *ngIf="currentLegend" class="flexCol">
       <h3> {{currentPassive}} </h3>
       <h5> Passive </h5>
