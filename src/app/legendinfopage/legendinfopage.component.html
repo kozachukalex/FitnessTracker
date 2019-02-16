@@ -1,24 +1,27 @@
-<div *ngIf=currentLegend.length class="row" id="legend-info-page">
+<div class="row" id="legend-info-page">
   <div class="col-sm-12 col-md-2">
-    <img *ngIf="currentLegend" src={{currentPortrait}} alt="legend-portrait">
+    <img *ngIf="currentLegend" src={{this.data.legendDetails[this.data.legendLocation].portrait}} alt="legend-portrait">
   </div>
   <section id="legend-description" class="col-sm-12 col-md-8">
     <div *ngIf="currentLegend" class="flexCol">
-      <h3> {{currentPassive}} </h3>
+      <h3> {{this.data.legendDetails[this.data.legendLocation].passive}} </h3>
       <h5> Passive </h5>
-      <p> {{currentPassiveDescription}}</p>
+      <p> {{this.data.legendDetails[this.data.legendLocation].passiveDescription}}</p>
     </div>
     <div *ngIf="currentLegend" class="divider"></div>
     <div *ngIf="currentLegend" class="flexCol">
-      <h3> {{currentTactical}}</h3>
+      <h3> {{this.data.legendDetails[this.data.legendLocation].tactical}}</h3>
       <h5> Tactical </h5>
-      <p> {{currentTacticalDescription}} </p>
+      <p> {{this.data.legendDetails[this.data.legendLocation].tacticalDescription}} </p>
     </div>
     <div *ngIf="currentLegend" class="divider"></div>
     <div *ngIf="currentLegend" class="flexCol">
-      <h3> {{currentUltimate}} </h3>
+      <h3> {{this.data.legendDetails[this.data.legendLocation].ultimate}} </h3>
       <h5> Ultimate </h5>
-      <p> {{currentUltimateDescription}}</p>
+      <p> {{this.data.legendDetails[this.data.legendLocation].ultimateDescription}}</p>
     </div>
   </section>
 </div>
+<!-- add when there location is -1 button does not exist -->
+<button *ngIf=this.data.backwardLegendExists (click)="changeLegend(this.data.backwardLegend)" routerLink="/legends/{{this.data.backwardLegend}}"> {{this.data.backwardLegend}} backwards </button>
+<button *ngIf=this.data.forwardLegendExists (click)="changeLegend(this.data.forwardLegend)" routerLink="/legends/{{this.data.forwardLegend}}"> {{this.data.forwardLegend}} forwards </button>

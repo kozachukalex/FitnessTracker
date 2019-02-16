@@ -7,17 +7,6 @@ import { LegendService } from '../legend.service';
   styleUrls: ['./legendspage.component.scss']
 })
 export class LegendspageComponent implements OnInit {
-  
-  currentLegend: string = "";
-
-  currentPassive: string = "";
-  currentPassiveDescription: string = "";
-  currentTactical: string = "";
-  currentTacticalDescription: string = "";
-  currentUltimate: string = "";
-  currentUltimateDescription: string = "";
-
-
 
   constructor(private data: LegendService) { }
 

@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
+import { Router } from "@angular/router"
 
 @Injectable({
   providedIn: 'root'
 })
 export class LegendService {
 
-  currentLegend: string = "none";
+  currentLegend: string = "";
 
   legendList = ["bangalore", "bloodhound", "caustic", "gibraltar", "lifeline", "mirage", "pathfinder", "wraith"]
 
@@ -92,11 +93,63 @@ export class LegendService {
     },
   ];
 
-  constructor() { }
+  legendLocation: number = this.legendList.indexOf(this.currentLegend);
 
-  changeLegend(legend: string){
-    console.log(this.currentLegend)
-    this.currentLegend = legend;
-    console.log(this.currentLegend);
+  backwardLegendLocation: number = 0
+  forwardLegendLocation: number = 0
+
+  backwardLegend: string = ""
+  forwardLegend: string = ""
+
+  backwardLegendExists: boolean = true;
+  forwardLegendExists: boolean = true;
+
+  // this was done later to render based off url, probably can remove earlier legendService changes code in legendinfopage to reduce Code. 
+  constructor(private router: Router) {
+    console.log(this.router.url);
+    if (this.currentLegend){
+      return
+    } else {
+      let route = this.router.url;
+      console.log(route)
+      let routeArray = route.split("/");
+      console.log(routeArray)
+      let routeArrayLength = routeArray.length - 1;
+      console.log(routeArrayLength)
+      let routeLegend = routeArray[routeArrayLength];
+      routeLegend = routeLegend.toLowerCase();
+      console.log(routeLegend)
+      if (this.legendList.indexOf(routeLegend) > 0){
+        this.currentLegend = routeLegend;
+        console.log(this.currentLegend)
+        this.changeLegend(this.currentLegend);
+      }
+    }
   }
+
+  changeLegend(legend: string) {
+    this.currentLegend = legend;
+    console.log(this.currentLegend)
+    this.legendLocation = this.legendList.indexOf(this.currentLegend);
+
+    this.backwardLegendLocation = this.legendList.indexOf(this.currentLegend) - 1;
+    this.forwardLegendLocation = this.legendList.indexOf(this.currentLegend) + 1;
+
+    if (this.backwardLegendLocation === -1){
+      this.backwardLegend = "empty"
+      this.backwardLegendExists = false;
+    } else {
+      this.backwardLegend = this.legendDetails[this.backwardLegendLocation].name;
+      this.backwardLegendExists = true;
+    }
+
+    if (this.forwardLegendLocation === this.legendList.length){
+      this.forwardLegend = "empty"
+      this.forwardLegendExists = false;
+    } else {
+      this.forwardLegend = this.legendDetails[this.forwardLegendLocation].name;
+      this.forwardLegendExists = true;
+    }
+  }
+
 }
