@@ -10,24 +10,58 @@ z-index: 10;
     right: 0px;
     z-index: 10;
 }
-h2{
-    padding-top: 90px;
+#header{
+    overflow: hidden;
+    max-height: 700px;
+    h2{
+        position: absolute;
+        right: 20%;
+        top: 350px;
+    }
+}
+#headerImage{
+    margin-top: 60px;
+    width: 100%;
+}
+h2{ 
     text-align: center;
     font-size: 3em;
+    margin-bottom: 20px;
+}
+.divider{
+    margin-bottom: 40px;
 }
 .row{
     margin-left: 0px;
     margin-right: 0px;
 }
 
-#legend-info-page{
-    width: 96%;
-    margin: 0 auto;
-};
-
 #infoArea{
     margin-top: 40px;
 }
 .abilityImage{
     height: 150px;
+}
+
+@media screen and (max-width: 780px){
+    #header{
+        h2{
+            position: relative;
+            text-align: center;
+            right: 0;
+            top: -250px;
+            width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 460px){
+    #header{
+        h2{
+            position: relative;
+            text-align: center;
+            right: 0;
+            top: 0px;
+            width: 100%;
+        }
+    }
 }

@@ -3,11 +3,13 @@
 <button *ngIf=this.data.forwardLegendExists (click)="changeLegend(this.data.forwardLegend)" routerLink="/legends/{{this.data.forwardLegend}}"
   id="forwardButton"> {{this.data.forwardLegend}} forwards </button>
 <div id="legend-info-page">
-  <h2> {{this.data.legendDetails[this.data.legendLocation].name}} </h2>
-  <div class="divider"></div>
+  <div id="header">
+      <img src={{this.currentHeaderImage}} alt="legend-header-image" id="headerImage">
+    <h2> {{this.data.legendDetails[this.data.legendLocation].name}} </h2>
+  </div>
   <div class="row" id="infoArea">
     <div class="col-sm-12 col-md-2">
-      <img *ngIf="currentLegend" src={{this.data.legendDetails[this.data.legendLocation].portrait}} alt="legend-portrait">
+      <img *ngIf="currentLegend" src="{{this.data.legendDetails[this.data.legendLocation].portrait}}" alt="legend-portrait">
     </div>
     <section id="legend-description" class="col-sm-12 col-md-8">
       <div *ngIf="currentLegend" class="flexCol">

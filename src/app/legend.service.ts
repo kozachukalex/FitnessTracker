@@ -133,6 +133,19 @@ export class LegendService {
     },
   ];
 
+  respawnPictures = [
+    { 
+      smallest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bangalore-xl.jpg.adapt.320w.jpg",
+      small: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bangalore-xl.jpg.adapt.768w.jpg",
+      medium: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bangalore-xl.jpg.adapt.1024w.jpg",
+      large: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bangalore-xl.jpg.adapt.1456w.jpg",
+      largest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bangalore-xl.jpg.adapt.1920w.jpg"
+    },
+    {
+      medium: "../../assets/legendPortrait/boodhoundResizedPortrait.png"
+    }
+  ]
+
   legendLocation: number = this.legendList.indexOf(this.currentLegend);
 
   backwardLegendLocation: number = 0
