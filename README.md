@@ -1,4 +1,6 @@
-# FitnessTracker
+<h1> The Podium </h1>
+
+# Podium
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.1.
 
