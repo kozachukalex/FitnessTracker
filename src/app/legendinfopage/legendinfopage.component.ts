@@ -11,7 +11,7 @@ export class LegendinfopageComponent implements OnInit {
 
   currentLegend = this.data.currentLegend;
 
-  constructor(private data: LegendService) {
+  constructor(public data: LegendService) {
 
   }
 

@@ -8,7 +8,7 @@ import { LegendService } from '../legend.service';
 })
 export class LegendspageComponent implements OnInit {
 
-  constructor(private data: LegendService) { }
+  constructor(public data: LegendService) { }
 
   ngOnInit() {
   }
