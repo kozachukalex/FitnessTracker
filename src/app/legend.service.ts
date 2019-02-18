@@ -176,7 +176,7 @@ export class LegendService {
     this.forwardLegendLocation = this.legendList.indexOf(this.currentLegend) + 1;
 
     if (this.backwardLegendLocation === -1){
-      // change this to be last index of array legend list
+      // change this to be last index of array legendList
       this.backwardLegend = "wraith"
       this.backwardLegendExists = true;
     } else {
