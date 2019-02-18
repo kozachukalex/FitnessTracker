@@ -1,6 +1,9 @@
 {
-  "name": "fitness-tracker",
+  "name": "podium",
   "version": "0.0.0",
+  "engines": {
+    "node": "10.2.1"
+  },
   "scripts": {
     "postinstall": "ng build --prod",
     "ng": "ng",
