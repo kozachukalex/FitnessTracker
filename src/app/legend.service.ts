@@ -135,15 +135,69 @@ export class LegendService {
 
   respawnPictures = [
     { 
+      name: "bangalore",
       smallest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bangalore-xl.jpg.adapt.320w.jpg",
       small: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bangalore-xl.jpg.adapt.768w.jpg",
       medium: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bangalore-xl.jpg.adapt.1024w.jpg",
       large: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bangalore-xl.jpg.adapt.1456w.jpg",
       largest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bangalore-xl.jpg.adapt.1920w.jpg"
     },
-    {
-      medium: "../../assets/legendPortrait/boodhoundResizedPortrait.png"
-    }
+    { 
+      name: "bloodhound",
+      smallest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bloodhound-xl.jpg.adapt.320w.jpg",
+      small: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bloodhound-xl.jpg.adapt.768w.jpg",
+      medium: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bloodhound-xl.jpg.adapt.1024w.jpg",
+      large: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bloodhound-xl.jpg.adapt.1456w.jpg",
+      largest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-bloodhound-xl.jpg.adapt.1920w.jpg"
+    },
+    { 
+      name: "caustic",
+      smallest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-caustic-xl.jpg.adapt.320w.jpg",
+      small: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-caustic-xl.jpg.adapt.768w.jpg",
+      medium: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-caustic-xl.jpg.adapt.1024w.jpg",
+      large: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-caustic-xl.jpg.adapt.1456w.jpg",
+      largest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-caustic-xl.jpg.adapt.1920w.jpg"
+    },
+    { 
+      name: "gibraltar",
+      smallest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-gibraltar-xl.jpg.adapt.320w.jpg",
+      small: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-gibraltar-xl.jpg.adapt.768w.jpg",
+      medium: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-gibraltar-xl.jpg.adapt.1024w.jpg",
+      large: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-gibraltar-xl.jpg.adapt.1456w.jpg",
+      largest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-gibraltar-xl.jpg.adapt.1920w.jpg"
+    },
+    { 
+      name: "lifeline",
+      smallest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-lifeline-xl.jpg.adapt.320w.jpg",
+      small: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-lifeline-xl.jpg.adapt.768w.jpg",
+      medium: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-lifeline-xl.jpg.adapt.1024w.jpg",
+      large: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-lifeline-xl.jpg.adapt.1456w.jpg",
+      largest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-lifeline-xl.jpg.adapt.1920w.jpg"
+    },
+    { 
+      name: "mirage",
+      smallest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-mirage-xl.jpg.adapt.320w.jpg",
+      small: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-mirage-xl.jpg.adapt.768w.jpg",
+      medium: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-mirage-xl.jpg.adapt.1024w.jpg",
+      large: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-mirage-xl.jpg.adapt.1456w.jpg",
+      largest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-mirage-xl.jpg.adapt.1920w.jpg"
+    },
+    { 
+      name: "pathfinder",
+      smallest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-pathfinder-xl.jpg.adapt.320w.jpg",
+      small: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-pathfinder-xl.jpg.adapt.768w.jpg",
+      medium: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-pathfinder-xl.jpg.adapt.1024w.jpg",
+      large: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-pathfinder-xl.jpg.adapt.1456w.jpg",
+      largest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-pathfinder-xl.jpg.adapt.1920w.jpg"
+    },
+    { 
+      name: "wraith",
+      smallest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-wraith-xl.jpg.adapt.320w.jpg",
+      small: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-wraith-xl.jpg.adapt.768w.jpg",
+      medium: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-wraith-xl.jpg.adapt.1024w.jpg",
+      large: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-wraith-xl.jpg.adapt.1456w.jpg",
+      largest: "https://media.contentapi.ea.com/content/dam/apex-legends/common/legends/apex-section-bg-legends-wraith-xl.jpg.adapt.1920w.jpg"
+    },
   ]
 
   legendLocation: number = this.legendList.indexOf(this.currentLegend);
