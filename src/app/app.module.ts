@@ -6,10 +6,9 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomepageComponent } from './homepage/homepage.component';
 import { AboutpageComponent } from './aboutpage/aboutpage.component';
-import { ContactpageComponent } from './contactpage/contactpage.component';
-import { LoginpageComponent } from './loginpage/loginpage.component';
 import { LegendspageComponent } from './legendspage/legendspage.component';
 import { LegendinfopageComponent } from './legendinfopage/legendinfopage.component';
+import { GunlockerComponent } from './gunlocker/gunlocker.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +16,9 @@ import { LegendinfopageComponent } from './legendinfopage/legendinfopage.compone
     NavbarComponent,
     HomepageComponent,
     AboutpageComponent,
-    ContactpageComponent,
-    LoginpageComponent,
     LegendspageComponent,
-    LegendinfopageComponent
+    LegendinfopageComponent,
+    GunlockerComponent
   ],
   imports: [
     BrowserModule,

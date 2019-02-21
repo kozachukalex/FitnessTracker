@@ -10,14 +10,11 @@
       <a routerLink="/legends">
         <li> Legends </li>
       </a>
+      <a routerLink="/gunlocker">
+        <li> Gun Locker </li>
+      </a>
       <a routerLink="/about">
         <li> About </li>
-      </a>
-      <a routerLink="/contact">
-        <li> Contact Us </li>
-      </a>
-      <a routerLink="/login">
-        <li> Log In </li>
       </a>
     </ul>
     <div *ngIf="!visible" (click)="openMobileNav()" id="mobile-nav-menu-icon">
@@ -37,14 +34,12 @@
     <a routerLink="/legends" (click)="closeMobileNav()">
       <li> Legends </li>
     </a>
+    <a routerLink="/gunlocker" (click)="closeMobileNav()">
+      <li> Gun Locker </li>
+    </a>
     <a routerLink="/about" (click)="closeMobileNav()">
       <li> About </li>
     </a>
-    <a routerLink="/contact" (click)="closeMobileNav()">
-      <li> Contact Us</li>
-    </a>
-    <a routerLink="/login" (click)="closeMobileNav()">
-      <li> Log In </li>
-    </a>
+
   </ul>
 </div>

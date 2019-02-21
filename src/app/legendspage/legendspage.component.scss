@@ -1,26 +1,42 @@
 *{
     margin: 0 auto;
 }
-h2{
-    padding-top: 90px;
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    text-align: center;
+#legends-page-header{
+    background-image: url("../../assets/images/landscapeOfMapBlackAndWhite.png");
+    background-color: rgba(0,0,0,0.3);
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    padding-top: 60px;
+    height: 70vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    color: white;
+    h2{
+        font-size: 4em;
+        text-align: center;
+        margin-bottom: 80px;
+    }
+    p{
+        text-align: center;
+        font-size: 2em;
+    }
 }
 
 
 #legend-wrapper{
-    max-width: 80vw;
-    background: black;
-    padding-top: 40px;
+    background: url("../../assets/images/dossierBackground.png");
+    background-size: cover;
     padding-bottom: 30px;
 
     #legend-list{
+        padding-top: 40px;
         ul{
             display: flex;
             flex-flow: row wrap;
             justify-content: space-around;
-            max-width: 50vw;
+            padding-left: 0;
             li{
                 list-style: none;
                 margin: 10px 20px;
@@ -31,13 +47,25 @@ h2{
                         width: 100%;
                     }
                     p{
-                    margin: 10px auto;
-                    text-align: center;
+                        text-transform: capitalize;
+                        margin: 10px auto;
+                        text-align: center;
+                        color: black;
+                        font-size: 1.2em;
+                        font-weight: bold;
+                        &:hover{
+                            text-decoration: none;
+                        }
                     }
                 }
             }
         }
     }
+}
+.legend-portrait:hover{
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.1);
 }
 
 @media screen and (max-width: 800px){
@@ -48,5 +76,18 @@ h2{
     }
     *{
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #legends-page-header{
+        height: 95vh;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #legend-wrapper{
+        background-size: 480px;
+        background-repeat: repeat-y;
+        padding-bottom: 30px;
     }
 }
