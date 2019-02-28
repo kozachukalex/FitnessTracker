@@ -4,17 +4,17 @@
       <h4 id="brand-logo"> Podium </h4>
     </a>
     <ul class="flexRow" id="desktop-menu">
-      <a routerLink="/">
-        <li> Home </li>
+      <a href="/">
+        <li> HOME </li>
       </a>
-      <a routerLink="/legends">
-        <li> Legends </li>
+      <a href="/legends">
+        <li> LEGENDS </li>
       </a>
-      <a routerLink="/gunlocker">
-        <li> Gun Locker </li>
+      <a href="/gunlocker">
+        <li> GUN LOCKER </li>
       </a>
-      <a routerLink="/about">
-        <li> About </li>
+      <a href="/about">
+        <li> ABOUT </li>
       </a>
     </ul>
     <div *ngIf="!visible" (click)="openMobileNav()" id="mobile-nav-menu-icon">
@@ -28,17 +28,17 @@
 </div>
 <div id="mobile-menu">
   <ul>
-    <a routerLink="/" (click)="closeMobileNav()">
-      <li> Home </li>
+    <a href="/" (click)="closeMobileNav()">
+      <li> HOME </li>
     </a>
-    <a routerLink="/legends" (click)="closeMobileNav()">
-      <li> Legends </li>
+    <a href="/legends" (click)="closeMobileNav()">
+      <li> LEGENDS </li>
     </a>
-    <a routerLink="/gunlocker" (click)="closeMobileNav()">
-      <li> Gun Locker </li>
+    <a href="/gunlocker" (click)="closeMobileNav()">
+      <li> GUN LOCKER </li>
     </a>
-    <a routerLink="/about" (click)="closeMobileNav()">
-      <li> About </li>
+    <a href="/about" (click)="closeMobileNav()">
+      <li> ABOUT </li>
     </a>
 
   </ul>

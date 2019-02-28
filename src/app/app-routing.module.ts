@@ -12,7 +12,9 @@ const routes: Routes = [
   {path: "legends", component: LegendspageComponent},
   {path: "legends/:legend", component: LegendinfopageComponent},
   {path: "gunlocker", component: GunlockerComponent},
-  {path: "gunlocker/:equipment", component: GunlockerComponent}
+  {path: "gunlocker/:type", component: GunlockerComponent},
+  {path: "gunlocker/:type/:weapon", component: GunlockerComponent},
+
 ];
 
 @NgModule({

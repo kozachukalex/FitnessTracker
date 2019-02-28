@@ -7,46 +7,26 @@
     <img src={{this.currentHeaderImage}} alt="legend-header-image" id="headerImage">
     <h2> {{this.data.legendDetails[this.data.legendLocation].name}} </h2>
   </div>
-  <div class="row" id="infoArea">
-    <!-- <div class="col-sm-12 col-md-2">
-      <img *ngIf="currentLegend" src="{{this.data.legendDetails[this.data.legendLocation].portrait}}" alt="legend-portrait">
-    </div> -->
-    <div class="col-sm-12 col-md-4"></div>
-    <section id="legend-description" class="col-sm-12 col-md-8">
-      <div *ngIf="currentLegend" class="flexCol">
-        <div class="row">
-          <img src={{this.data.legendDetails[this.data.legendLocation].passiveImage}} alt="passive-image" class="abilityImage">
-          <div class="col">
-            <h3> {{this.data.legendDetails[this.data.legendLocation].passive}} </h3>
-            <h5> Passive </h5>
-          </div>
-        </div>
+  <section class="row container" id="infoArea">
+    <div *ngIf="currentLegend" class="flexCol ability-description col-md-4 col-sm-12">
+      <img src={{this.data.legendDetails[this.data.legendLocation].passiveImage}} alt="passive-image" class="abilityImage">
+        <h3> {{this.data.legendDetails[this.data.legendLocation].passive}} </h3>
+        <h5> Passive </h5>
         <p> {{this.data.legendDetails[this.data.legendLocation].passiveDescription}}</p>
-      </div>
-      <div *ngIf="currentLegend" class="divider"></div>
-      <div *ngIf="currentLegend" class="flexCol">
-        <div class="row">
-          <img src={{this.data.legendDetails[this.data.legendLocation].tacticalImage}} alt="tactical-image" class="abilityImage">
-          <div class="col">
-            <h3> {{this.data.legendDetails[this.data.legendLocation].tactical}}</h3>
-            <h5> Tactical </h5>
-            <h4> Cooldown: {{this.data.legendDetails[this.data.legendLocation].tacticalCooldown}}</h4>
-          </div>
-        </div>
+    </div>
+    <div *ngIf="currentLegend" class="flexCol ability-description col-md-4 col-sm-12">
+      <img src={{this.data.legendDetails[this.data.legendLocation].tacticalImage}} alt="tactical-image" class="abilityImage">
+        <h3> {{this.data.legendDetails[this.data.legendLocation].tactical}}</h3>
+        <h5> Tactical </h5>
+        <h4> Cooldown: {{this.data.legendDetails[this.data.legendLocation].tacticalCooldown}}</h4>
         <p> {{this.data.legendDetails[this.data.legendLocation].tacticalDescription}} </p>
-      </div>
-      <div *ngIf="currentLegend" class="divider"></div>
-      <div *ngIf="currentLegend" class="flexCol">
-        <div class="row">
-          <img src={{this.data.legendDetails[this.data.legendLocation].ultimateImage}} alt="ultimate-image" class="abilityImage">
-          <div class="col">
-            <h3> {{this.data.legendDetails[this.data.legendLocation].ultimate}} </h3>
-            <h5> Ultimate </h5>
-            <h4> Charge Time: {{this.data.legendDetails[this.data.legendLocation].ultimateCooldown}}</h4>
-          </div>
-        </div>
+    </div>
+    <div *ngIf="currentLegend" class="flexCol ability-description col-md-4 col-sm-12">
+      <img src={{this.data.legendDetails[this.data.legendLocation].ultimateImage}} alt="ultimate-image" class="abilityImage">
+        <h3> {{this.data.legendDetails[this.data.legendLocation].ultimate}} </h3>
+        <h5> Ultimate </h5>
+        <h4> Charge Time: {{this.data.legendDetails[this.data.legendLocation].ultimateCooldown}}</h4>
         <p> {{this.data.legendDetails[this.data.legendLocation].ultimateDescription}}</p>
-      </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </div>

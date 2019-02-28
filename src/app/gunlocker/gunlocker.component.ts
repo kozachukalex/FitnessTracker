@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { WeaponsService } from '../weapons.service';
+
 
 @Component({
   selector: 'app-gunlocker',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GunlockerComponent implements OnInit {
 
-  constructor() { }
+  constructor(public data: WeaponsService) {
+  }
 
   ngOnInit() {
   }
