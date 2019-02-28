@@ -11,3 +11,26 @@ th{
 td{
 padding: 0 10px;
 }
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+    }
+    tbody{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        #table-headers{
+            width: 50vw;
+            text-align: left;
+        }
+        #table-data{
+            width: 50vw;
+            text-align: right;
+        }
+    }
+}

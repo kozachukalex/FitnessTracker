@@ -18,8 +18,8 @@
 
     <div *ngIf=this.data.currentWeapon>
         <h3> {{this.data.currentWeapon.name}}</h3>
-        <table>
-            <tr>
+        <table class="container">
+            <tr id="table-headers">
                 <th>Ammo Type</th>
                 <th>Fire Rate</th>
                 <th>Magazine Size</th>
@@ -28,7 +28,7 @@
                 <th>Hop</th>
                 <th>Location</th>
             </tr>
-            <tr>
+            <tr id="table-data">
                 <td> {{this.data.weaponDetails[this.data.currentType][this.data.currentWeapon].ammoType}}</td>
                 <td> {{this.data.weaponDetails[this.data.currentType][this.data.currentWeapon].fireRate}}</td>
                 <td> {{this.data.weaponDetails[this.data.currentType][this.data.currentWeapon].magazineSize}}</td>
