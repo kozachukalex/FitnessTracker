@@ -29,7 +29,7 @@ export class NavbarComponent implements OnInit {
       target.style.visibility = "visible";
       target.style.opacity = "1";
       target.style.height = "100vh";
-      target.style.zIndex = "1";
+      target.style.zIndex = "1000";
       target.style.transform = "translateY(0)";
       target.style.transitionDelay = "0s,0s,0.5s";
 

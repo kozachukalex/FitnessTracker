@@ -1,10 +1,111 @@
 #homeContainer{
-    padding-top: 68px;
-    #landingThing{
-        background-image: url("../../assets/images/landscapeOfMap1.jpg");
-        height: 90vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#sectionContainer{
+    position: absolute;
+    width: 100%;
+    top: 80vh;
+    z-index: 1;
+}
+#firstSection{
+    background: tan;
+    min-height: 600px;
+}
+#shapeHeader{
+    background: tan;
+    width: 50%;
+    margin: 0 auto;
+    height: 100px;
+    text-align: center;
+    h1{
+        padding-top: 10px;
+    }
+    &:before{
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-bottom: 100px solid tan;
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 25%;
+        margin-left: -50px;
+    }
+    &:after{
+        width: 0;
+        height: 0;
+        border-right: 50px solid transparent;
+        border-bottom: 100px solid tan;
+        position: absolute;
+        content: "";
+        top: 0px;
+        left: 75%;
+        margin-right: -50px;
+    }
+}
+#imagesContainer{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    #video{
+        width: 100%;
+        max-height: 90vh;
+        object-fit: cover;
+        overflow: hidden;
+    }
+    #image{
+        position: absolute;
+        object-fit: cover;
+        min-height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+div{
+    color: black;
+}
+
+@media screen and (max-width: 980px){
+    #video{
+        display: none;
+    }
+    #shapeHeader{
+        position: relative;
+        top: -70vh;
+        background: none;
+        color: white;
+        width: 100%;
         margin: 0 auto;
-        background-size: cover;
-        background-position: center;
+        height: 60px;
+        text-align: center;
+        z-index: 3;
+        h1{
+            padding-top: 10px;
+            font-size: 2em;
+        }
+        &:before{
+            width: 0;
+            height: 0;
+            border-left: 0;
+            border-bottom: 0;
+        }
+        &:after{
+            width: 0;
+            height: 0;
+            border-right: 0;
+            border-bottom: 0;
+        }
+        h3{
+            position: absolute;
+            top: 60vh;
+        }
     }
 }

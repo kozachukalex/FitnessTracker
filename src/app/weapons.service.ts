@@ -214,20 +214,32 @@ export class WeaponsService {
   }
 
   currentType: string = "";
+  currentTypeRoute: string = "";
   currentWeapon: string = "";
   weaponKeys;
 
   constructor(private router: Router) {
+    //Purpose of this router constructor is to allow a user to type in a url and correctly parse and set current services according to the route. This allows a user to return to a specific URL to see relevent information and remove needing to click everything each visit.
     let route = this.router.url;
     console.log(route)
     let routeArray = route.split("/");
     console.log(routeArray)
     if (routeArray.length > 2) {
-      this.currentType = routeArray[2];
-      console.log(this.currentType);
+      this.currentTypeRoute = routeArray[2];
+      let type = routeArray[2];
+      type = type.replace("%20", " ");
+      let typeArray = type.split(" ");
+      let newType = typeArray[0] + typeArray[1].charAt(0).toUpperCase() + typeArray[1].slice(1);
+      this.currentType = newType;
+      console.log(this.currentTypeRoute);
+      this.updateType(this.currentType);
       if (routeArray.length > 3) {
+        if (!this.currentWeapon){
         this.currentWeapon = routeArray[3];
-        console.log(this.currentWeapon)
+        console.log(this.currentWeapon);
+        } else {
+          return
+        }
       } else {
         return;
       }
@@ -235,17 +247,20 @@ export class WeaponsService {
       return
     }
   }
+  
   updateType(type) {
     console.log(type);
-    let test = type.split(" ");
-    if (test[1]) {
-      let newType = test[0] + test[1].charAt(0).toUpperCase() + test[1].slice(1);
+    let selection = type.split(" ");
+    if (selection[1]) {
+      let newTypeRoute = selection[0] + " " + selection[1];
+      let newType = selection[0] + selection[1].charAt(0).toUpperCase() + selection[1].slice(1);
       console.log(newType);
+      this.currentTypeRoute = newTypeRoute;
       this.currentType = newType;
     } else {
       this.currentType = type;
     }
-    console.log(test);
+    console.log(selection);
     this.weaponKeys = Object.keys(this.weaponDetails[this.currentType])
     console.log(this.currentType);
     this.currentWeapon = "";

@@ -10,7 +10,7 @@
         </div>
         <div *ngIf=this.data.weaponKeys class="flexCol">
             <a *ngFor="let weapon of this.data.weaponKeys">
-                <button routerLink="/gunlocker/{{this.data.currentType}}/{{weapon}}" (click)="this.data.updateWeapon(weapon)">
+                <button routerLink="/gunlocker/{{this.data.currentTypeRoute}}/{{weapon}}" (click)="this.data.updateWeapon(weapon)">
                     {{weapon}} </button>
             </a>
         </div>
