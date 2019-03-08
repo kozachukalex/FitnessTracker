@@ -5,10 +5,10 @@
     width: 100%;
 }
 #sectionContainer{
-    position: absolute;
-    width: 100%;
-    top: 80vh;
-    z-index: 1;
+    position: relative;
+    top: -120px;
+    width: 100vw;
+    z-index: 4;
 }
 #firstSection{
     background: tan;
@@ -47,13 +47,14 @@
     }
 }
 #imagesContainer{
-    position: absolute;
+    position: relative;
     height: 100%;
     width: 100%;
     top: 0;
     bottom: 0;
     z-index: 1;
     #video{
+        position: relative;
         width: 100%;
         max-height: 90vh;
         object-fit: cover;
@@ -74,22 +75,26 @@ div{
 }
 
 @media screen and (max-width: 980px){
+    #sectionContainer{
+        position: absolute;
+        text-align: center;
+        top: 65vh;
+    }
     #video{
         display: none;
     }
     #shapeHeader{
         position: relative;
-        top: -70vh;
+        top: -65vh;
         background: none;
         color: white;
         width: 100%;
         margin: 0 auto;
         height: 60px;
         text-align: center;
-        z-index: 3;
+        z-index: 5;
         h1{
-            padding-top: 10px;
-            font-size: 2em;
+            display: none;
         }
         &:before{
             width: 0;
@@ -104,7 +109,7 @@ div{
             border-bottom: 0;
         }
         h3{
-            position: absolute;
+            position: relative;
             top: 60vh;
         }
     }

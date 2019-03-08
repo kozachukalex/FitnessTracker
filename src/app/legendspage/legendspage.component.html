@@ -7,7 +7,7 @@
     <ul>
       <li *ngFor="let legend of legendDetails" class="legend-portrait">
         <a (click)="changeLegend(legend.name)" routerLink="/legends/{{legend.name}}">
-          <img src="{{legend.portrait}}" alt={{legend.name}}>
+          <img src="{{legend.portrait}}" alt={{legend.name}} class="portait-image">
           <p>{{legend.name}}</p>
         </a>
       </li>

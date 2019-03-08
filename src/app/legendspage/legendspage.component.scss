@@ -62,10 +62,23 @@
         }
     }
 }
-.legend-portrait:hover{
-    transition-duration: 0.1s;
-    transition-timing-function: ease-in-out;
-    transform: scale(1.1);
+img{
+    
+}
+.legend-portrait{
+    position: relative;
+    border-top: 8px solid gray;
+    border-right: 3px solid gray;
+    border-bottom: 5px solid gray;
+    border-left: 3px solid gray;
+    &:hover{
+        transition-duration: 0.1s;
+        transition-timing-function: ease-in-out;
+        border-top: 8px solid cyan;
+        border-right: 3px solid cyan;
+        border-bottom: 5px solid cyan;
+        border-left: 3px solid cyan;
+    }
 }
 
 @media screen and (max-width: 800px){
