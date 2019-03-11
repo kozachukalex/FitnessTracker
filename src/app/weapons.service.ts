@@ -213,6 +213,34 @@ export class WeaponsService {
     }
   }
 
+  weaponTypeButtons = [
+    {
+      type: "assault rifle",
+      buttonImage: "../assets/weapons/assaultrifle/assaultrifleButton.png"
+    },
+    {
+      type: "lightmachine gun",
+      buttonImage: "../assets/weapons/lmg/lightmachinegunButton.png"
+    },
+    {
+      type: "pistol",
+      buttonImage: "../assets/weapons/pistol/pistolButton.png"
+    },
+    {
+      type: "shotgun",
+      buttonImage: "../assets/weapons/shotgun/shotgunButton.png"
+    },
+    {
+      type: "sniper rifle",
+      buttonImage: "../assets/weapons/snipers/sniperrifleButton.png"
+    },
+    {
+      type: "submachine gun",
+      buttonImage: "../assets/weapons/smg/submachinegunButton.png"
+    },
+
+  ]
+
   currentType: string = "";
   currentTypeRoute: string = "";
   currentWeapon: string = "";
@@ -234,9 +262,9 @@ export class WeaponsService {
       console.log(this.currentTypeRoute);
       this.updateType(this.currentType);
       if (routeArray.length > 3) {
-        if (!this.currentWeapon){
-        this.currentWeapon = routeArray[3];
-        console.log(this.currentWeapon);
+        if (!this.currentWeapon) {
+          this.currentWeapon = routeArray[3];
+          console.log(this.currentWeapon);
         } else {
           return
         }
@@ -247,7 +275,7 @@ export class WeaponsService {
       return
     }
   }
-  
+
   updateType(type) {
     console.log(type);
     let selection = type.split(" ");

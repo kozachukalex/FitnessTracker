@@ -1,17 +1,15 @@
-<h1> This will be where the rendering for weapons will be and will work on a filter system </h1>
-<div class="flexMediaRowToCol">
-    <div class="flexCol">
-        <div class="flexRow">
-            <div *ngFor="let type of this.data.weaponTypes">
-                <button routerLink="/gunlocker/{{type}}" (click)="this.data.updateType(type)">
-                    <p>{{type}}</p>
-                </button>
+<div class="flexMediaRowToCol jc-space-around" id="gunlocker-wrapper">
+    <div class="flexCol jc-space-around">
+        <div class="flexRow container jc-space-around">
+            <div *ngFor="let type of this.data.weaponTypeButtons">
+                <div routerLink="/gunlocker/{{type.type}}" (click)="this.data.updateType(type.type)" class="typeButton" [style.backgroundImage]="'url('+ type.buttonImage +')'">
+                </div>
             </div>
         </div>
         <div *ngIf=this.data.weaponKeys class="flexCol">
             <a *ngFor="let weapon of this.data.weaponKeys">
-                <button routerLink="/gunlocker/{{this.data.currentTypeRoute}}/{{weapon}}" (click)="this.data.updateWeapon(weapon)">
-                    {{weapon}} </button>
+                <div routerLink="/gunlocker/{{this.data.currentTypeRoute}}/{{weapon}}" (click)="this.data.updateWeapon(weapon)">
+                    {{weapon}} </div>
             </a>
         </div>
     </div>
