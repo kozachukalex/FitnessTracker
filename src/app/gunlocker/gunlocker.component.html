@@ -1,19 +1,16 @@
-<div class="flexMediaRowToCol jc-space-around" id="gunlocker-wrapper">
+<div class="flexCol jc-space-around" id="gunlocker-wrapper">
     <div class="flexCol jc-space-around">
         <div class="flexRow container jc-space-around">
-            <div *ngFor="let type of this.data.weaponTypeButtons">
-                <div routerLink="/gunlocker/{{type.type}}" (click)="this.data.updateType(type.type)" class="typeButton" [style.backgroundImage]="'url('+ type.buttonImage +')'">
-                </div>
+                <div *ngFor="let type of this.data.weaponTypeButtons" routerLink="/gunlocker/{{type.type}}" (click)="this.data.updateType(type.type)" class="typeButton" [style.backgroundImage]="'url('+ type.buttonImage +')'">
             </div>
         </div>
-        <div *ngIf=this.data.weaponKeys class="flexCol">
+        <div *ngIf=this.data.weaponKeys class="flexMediaRowToCol jc-space-around ai-Center containerTwo">
             <a *ngFor="let weapon of this.data.weaponKeys">
                 <div routerLink="/gunlocker/{{this.data.currentTypeRoute}}/{{weapon}}" (click)="this.data.updateWeapon(weapon)">
                     {{weapon}} </div>
             </a>
         </div>
     </div>
-
     <div *ngIf=this.data.currentWeapon>
         <h3> {{this.data.currentWeapon.name}}</h3>
         <table class="container">
