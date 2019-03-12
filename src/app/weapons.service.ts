@@ -18,7 +18,8 @@ export class WeaponsService {
         bodyDamage: "18",
         headshotDamage: "36",
         hop: "none",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/assaultrifle/hemlok.png"
       },
       carbine: {
         name: "R-301",
@@ -28,7 +29,8 @@ export class WeaponsService {
         bodyDamage: "14",
         headshotDamage: "28",
         hop: "none",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/assaultrifle/r301.png"
       },
       flatline: {
         name: "VK-47 Flatline",
@@ -38,7 +40,8 @@ export class WeaponsService {
         bodyDamage: "16",
         headshotDamage: "32",
         hop: "none",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/assaultrifle/flatline.png"
       }
     },
     lightmachineGun: {
@@ -50,7 +53,8 @@ export class WeaponsService {
         bodyDamage: "20",
         headshotDamage: "40",
         hop: "none",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/lmg/spitfire.png"
       },
       devotion: {
         name: "Devotion",
@@ -60,7 +64,8 @@ export class WeaponsService {
         bodyDamage: "17",
         headshotDamage: "34",
         hop: "turbocharger",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/lmg/devotion.png"
       },
     },
     pistol: {
@@ -72,7 +77,8 @@ export class WeaponsService {
         bodyDamage: "45",
         headshotDamage: "90",
         hop: "skullpiercer",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/pistol/wingman.png"
       },
       mozambique: {
         name: "Mozambique",
@@ -82,7 +88,8 @@ export class WeaponsService {
         bodyDamage: "45",
         headshotDamage: "66",
         hop: "none",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/pistol/mozambique.png"
       },
       p2020: {
         name: "P2020",
@@ -92,7 +99,8 @@ export class WeaponsService {
         bodyDamage: "12",
         headshotDamage: "18",
         hop: "none",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/pistol/p2020.png"
       },
       re45auto: {
         name: "RE-45 Auto",
@@ -102,7 +110,8 @@ export class WeaponsService {
         bodyDamage: "11",
         headshotDamage: "16",
         hop: "none",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/pistol/re45.png"
       },
     },
     shotgun: {
@@ -114,7 +123,8 @@ export class WeaponsService {
         bodyDamage: "144",
         headshotDamage: "288",
         hop: "none",
-        location: "Supply Pods"
+        location: "Supply Pods",
+        image: "../assets/weapons/shotgun/mastiff.png"
       },
       peacekeeper: {
         name: "Peacekeeper",
@@ -124,7 +134,8 @@ export class WeaponsService {
         bodyDamage: "110",
         headshotDamage: "165",
         hop: "precision choke",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/shotgun/peacekeeper.png"
       },
       eva: {
         name: "EVA-9 Auto",
@@ -134,7 +145,8 @@ export class WeaponsService {
         bodyDamage: "63",
         headshotDamage: "90",
         hop: "none",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/shotgun/eva.png"
       },
     },
     sniperRifle: {
@@ -146,7 +158,8 @@ export class WeaponsService {
         bodyDamage: "125",
         headshotDamage: "250",
         hop: "none",
-        location: "Supply Pods"
+        location: "Supply Pods",
+        image: "../assets/weapons/snipers/kraber.png"
       },
       triple: {
         name: "Triple Take",
@@ -156,7 +169,8 @@ export class WeaponsService {
         bodyDamage: "69",
         headshotDamage: "138",
         hop: "precision choke",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/snipers/triple.png"
       },
       longbow: {
         name: "Longbow DMR",
@@ -166,7 +180,8 @@ export class WeaponsService {
         bodyDamage: "55",
         headshotDamage: "110",
         hop: "skullpiercer",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/snipers/longbow.png"
       },
       scout: {
         name: "G7 Scout",
@@ -176,7 +191,8 @@ export class WeaponsService {
         bodyDamage: "30",
         headshotDamage: "60",
         hop: "none",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/snipers/scout.png"
       },
     },
     submachineGun: {
@@ -188,7 +204,8 @@ export class WeaponsService {
         bodyDamage: "14",
         headshotDamage: "21",
         hop: "select fire",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/smg/prowler.png"
       },
       alternator: {
         name: "Alternator",
@@ -198,7 +215,8 @@ export class WeaponsService {
         bodyDamage: "13",
         headshotDamage: "19",
         hop: "none",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/smg/alternator.png"
       },
       r99: {
         name: "R-99",
@@ -208,7 +226,8 @@ export class WeaponsService {
         bodyDamage: "12",
         headshotDamage: "18",
         hop: "none",
-        location: "Standard"
+        location: "Standard",
+        image: "../assets/weapons/smg/r99.png"
       },
     }
   }
